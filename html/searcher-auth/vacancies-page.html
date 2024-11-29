@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансії</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/vacancies-page.css">
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                <div class="user">-->
+                <!--                    <div class="header__tab">-->
+                <!--                        <a class="header__tab-btn">-->
+                <!--                            Пошукачу-->
+                <!--                        </a>-->
+                <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                            Роботодавцю-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <a href="#" class="search__link">-->
+                <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </header>
+    <div class="bg-blur bg-blur__vacancies-page-2"></div>
+
+    <main class="main">
+        <div class="container">
+            <div class="vacancies__search-location-wrapper">
+                <div class="search-location">
+                    <form action="#" class="search-location__form">
+                        <div class="search-location__form-input">
+                            <img
+                                    src="../../images/search-md.svg"
+                                    alt="search"
+                                    class="search-location__form-img"
+                            />
+                            <label for="search" class="label-hidden">Пошук вакансії</label>
+                            <input
+                                    type="search"
+                                    id="search"
+                                    name="search"
+                                    class="search-location__input"
+                                    placeholder="Введіть вакансію"
+                            />
+                            <div class="select__vector"></div>
+                            <div class="search-location__select-wrapper">
+                                <label for="city" class="label-hidden">Місто</label>
+                                <input id="city" class="search-location__select" type="text" placeholder="Місто" value="Вся Україна">
+                                <ul class="search-location__select-list open">
+                                    <li class="search-location__select-item">Київ</li>
+                                    <li class="search-location__select-item">Дніпро</li>
+                                    <li class="search-location__select-item">Харьків</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <button type="submit" class="search-location__btn btn-color text-btn">
+                            Знайти роботу
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <section class="vacancies">
+                <div class="vacancies__left">
+                    <div class="vacancies__filter-block">
+                        <p class="vacancies__filter-block-text"> 2000 вакансій </p>
+                        <div class="search__filter">
+                            <img src="../../images/sort.svg" alt="filter" class="search__filter-img">
+                            <button class="search__filter-btn">Спочатку нові</button>
+                        </div>
+                    </div>
+                    <div class="vacancies__cards-wrapper">
+                        <ul class="vacancies__cards">
+                            <li class="vacancies__cards-item">
+                                <div class="vacancies__card">
+                                    <nav>
+                                        <ul class="vacancies__card-hashtags">
+                                            <li class="vacancies__card-hashtags-item hashtags-hot">
+                                                <img src="../../images/local_fire.svg" alt="fire">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Гаряча вакансія
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Бонуси
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">Дистанційно</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="vacancies__card-top">
+                                        <div class="vacancies__card-top-left">
+                                            <h3 class="vacancies__card-title">Менеджер з продажу</h3>
+                                            <div class="vacancies__card-additional-info">
+                                                <div class="text-btn">8 000 - 10 000 ₴</div>
+                                                <div class="location-block">
+                                                    <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                         alt="location">
+                                                    <p class="location-text">Дніпро</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-right">
+                                            <img src="../../images/samsung.svg" alt="samsung">
+                                            <p>Samsung</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancies__card-vacancy-info-wrapper">
+                                        <ul class="vacancies__card-vacancy-info">
+                                            <li class="vacancies__card-vacancy-info-item type-purple-italic">#Фінанси
+                                                #Дистанційно #SMM
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-green">
+                                                <img src="../../images/check-circle-broken.svg" alt="check">Повна
+                                                зайнятість
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-blue">
+                                                <img src="../../images/money-bag.svg" alt="money">Від 2-х років досвіду
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="vacancies__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-color">Відгукнутись</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="vacancies__cards-item">
+                                <div class="vacancies__card">
+                                    <nav>
+                                        <ul class="vacancies__card-hashtags">
+                                            <li class="vacancies__card-hashtags-item hashtags-hot">
+                                                <img src="../../images/local_fire.svg" alt="fire">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Гаряча вакансія
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Бонуси
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">Дистанційно</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="vacancies__card-top">
+                                        <div class="vacancies__card-top-left">
+                                            <h3 class="vacancies__card-title">Менеджер з продажу</h3>
+                                            <div class="vacancies__card-additional-info">
+                                                <div class="text-btn">8 000 - 10 000 ₴</div>
+                                                <div class="location-block">
+                                                    <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                         alt="location">
+                                                    <p class="location-text">Дніпро</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-right">
+                                            <img src="../../images/samsung.svg" alt="samsung">
+                                            <p>Samsung</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancies__card-vacancy-info-wrapper">
+                                        <ul class="vacancies__card-vacancy-info">
+                                            <li class="vacancies__card-vacancy-info-item type-purple-italic">#Фінанси
+                                                #Дистанційно #SMM
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-green">
+                                                <img src="../../images/check-circle-broken.svg" alt="check">Повна
+                                                зайнятість
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-blue">
+                                                <img src="../../images/money-bag.svg" alt="money">Від 2-х років досвіду
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="vacancies__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-color">Відгукнутись</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="vacancies__cards-item">
+                                <div class="vacancies__card">
+                                    <nav>
+                                        <ul class="vacancies__card-hashtags">
+                                            <li class="vacancies__card-hashtags-item hashtags-hot">
+                                                <img src="../../images/local_fire.svg" alt="fire">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Гаряча вакансія
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">
+                                                    Бонуси
+                                                </a>
+                                            </li>
+                                            <li class="vacancies__card-hashtags-item">
+                                                <a href="#" class="vacancies__card-hashtags-link">Дистанційно</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="vacancies__card-top">
+                                        <div class="vacancies__card-top-left">
+                                            <h3 class="vacancies__card-title">Менеджер з продажу</h3>
+                                            <div class="vacancies__card-additional-info">
+                                                <div class="text-btn">8 000 - 10 000 ₴</div>
+                                                <div class="location-block">
+                                                    <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                         alt="location">
+                                                    <p class="location-text">Дніпро</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-right">
+                                            <img src="../../images/samsung.svg" alt="samsung">
+                                            <p>Samsung</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacancies__card-vacancy-info-wrapper">
+                                        <ul class="vacancies__card-vacancy-info">
+                                            <li class="vacancies__card-vacancy-info-item type-purple-italic">#Фінанси
+                                                #Дистанційно #SMM
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-green">
+                                                <img src="../../images/check-circle-broken.svg" alt="check">Повна
+                                                зайнятість
+                                            </li>
+                                            <li class="vacancies__card-vacancy-info-item type-blue">
+                                                <img src="../../images/money-bag.svg" alt="money">Від 2-х років досвіду
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="vacancies__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-color">Відгукнутись</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="vacancies-page__pagination">
+                            <div class="pagination__block">
+                                <div class="pagination">
+                                    <a href="#"><img src="../../images/vector-left.svg" alt=""></a>
+                                    <a class="active" href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">...</a>
+                                    <a href="#">25</a>
+                                    <a href="#"><img src="../../images/vector-right.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="vacancies__right">
+                    <div class="vacancies__right-content">
+                        <details>
+                            <summary>Категорія</summary>
+                            <ul class="drop-down__list">
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Повна зайнятість</span>
+                                        <input type="checkbox" checked="checked"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">1650</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Неповна зайнятість</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">250</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Позмінна робота</span>
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">96</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Дистанційна</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Зайнятість</summary>
+                            <ul class="drop-down__list">
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Повна зайнятість</span>
+                                        <input type="checkbox" checked="checked"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">1650</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Неповна зайнятість</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">250</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Позмінна робота</span>
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">96</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Дистанційна</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Зарплата</summary>
+                            <ul class="drop-down__list">
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Повна зайнятість</span>
+                                        <input type="checkbox" checked="checked"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">1650</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Неповна зайнятість</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">250</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Позмінна робота</span>
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">96</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Дистанційна</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Знання мов</summary>
+                            <ul class="drop-down__list">
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Повна зайнятість</span>
+                                        <input type="checkbox" checked="checked"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">1650</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Неповна зайнятість</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">250</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Позмінна робота</span>
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">96</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Дистанційна</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Підходить для</summary>
+                            <ul class="drop-down__list">
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Повна зайнятість</span>
+                                        <input type="checkbox" checked="checked"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">1650</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Неповна зайнятість</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">250</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Позмінна робота</span>
+                                        <input type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">96</span>
+                                    </div>
+                                </li>
+                                <li class="drop-down__item">
+                                    <label class="container-label ">
+                                        <span class="text-medium-16">Дистанційна</span>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="select__option-value-wrapper">
+                                        <span class="select__option-value">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <p>(941) 867-1761</p>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../select.js"></script>
+</body>
+</html>

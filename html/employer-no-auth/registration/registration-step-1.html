@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Реєстрація-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/reset.css"/>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+    <link
+            rel="stylesheet"
+            href="../../../css/employer-no-auth/main-employer-no-auth.css"
+    />
+    <link rel="stylesheet" href="../../../css/create-vacancy.css"/>
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"
+                    ><img
+                            src="../../../images/logo.svg"
+                            alt="logo"
+                            class="logo__img"
+                    /></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Про компанію</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Новини</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user">
+                    <div class="header__tab">
+                        <a class="header__tab-btn"> Пошукачу </a>
+                        <a class="header__tab-btn user__actions-btn-active">
+                            Роботодавцю
+                        </a>
+                    </div>
+                    <a href="#" class="search__link">
+                        <img
+                                src="../../../images/log-in.svg"
+                                alt="search"
+                                class="search__img"
+                        /><span>Увійти</span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="registration">
+                <div class="registration-content">
+                    <div class="stepper-wrapper">
+                        <div class="stepper-item step-completed">
+                            <div class="step-counter">1</div>
+                            <div class="step-name">Email</div>
+                        </div>
+                        <div class="stepper-item">
+                            <div class="step-counter">2</div>
+                            <div class="step-name">Підтвердження</div>
+                        </div>
+                        <div class="stepper-item">
+                            <div class="step-counter">3</div>
+                            <div class="step-name">Особисті дані</div>
+                        </div>
+                    </div>
+                    <h3 class="form__title">Реєстрація</h3>
+                    <div class="user__actions-registration">
+                        <div class="modal-actions registration__tab">
+                            <input type="radio" id="radio-searcher" name="radios"/>
+                            <label class="registration__input-tab" for="radio-searcher"
+                            >Пошукачу</label
+                            >
+                            <input
+                                    type="radio"
+                                    id="radio-employer"
+                                    name="radios"
+                                    checked
+                            />
+                            <label class="registration__input-tab" for="radio-employer"
+                            >Роботодавцю</label
+                            >
+                        </div>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="login-searcher">
+                            <div class="form__input-wrapper-registration-top-24">
+                                <label for="phone" class="">Номер телефону</label>
+                                <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="form__input form__input-label"
+                                        placeholder="+(38_)"
+                                />
+                            </div>
+                            <div class="form__checkbox-rules-wrapper">
+                                <label for="rules" class="label-hidden"
+                                >Погоджуюсь з Політикою конфіденційності та Правилами
+                                    користування Сайтом</label
+                                >
+                                <input
+                                        type="checkbox"
+                                        id="rules"
+                                        name="rules"
+                                        class="form__checkbox"
+                                />
+                                <p class="form__checkbox-text">
+                                    Я погоджуюсь з
+                                    <a href="#" class="form__checkbox-link"
+                                    >Політикою конфідейності</a
+                                    >
+                                    та
+                                    <a href="#" class="form__checkbox-link"
+                                    >Правилами користування Сайтом</a
+                                    >
+                                </p>
+                            </div>
+                            <div class="form__submit-btn-wrapper">
+                                <input
+                                        type="submit"
+                                        class="form__submit-btn btn-color"
+                                        value="Продовжити"
+                                />
+                            </div>
+                            <p class="form__submit-btn-text">
+                                Вже є акаунт?
+                                <a href="#" class="form__submit-link">Увійти в акаунт</a>
+                            </p>
+                        </div>
+                        <div class="login-employer">
+                            <div class="form__input-wrapper-registration-top-24">
+                                <label for="email" class="">Email</label>
+                                <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form__input form__input-label"
+                                        placeholder="Введіть свій email"
+                                />
+                            </div>
+                            <div class="form__checkbox-rules-wrapper">
+                                <label for="rules1" class="label-hidden"
+                                >Погоджуюсь з Політикою конфіденційності та Правилами
+                                    користування Сайтом</label
+                                >
+                                <input
+                                        type="checkbox"
+                                        id="rules1"
+                                        name="rules"
+                                        class="form__checkbox"
+                                />
+                                <p class="form__checkbox-text">
+                                    Я погоджуюсь з
+                                    <a href="#" class="form__checkbox-link"
+                                    >Політикою конфідейності</a
+                                    >
+                                    та
+                                    <a href="#" class="form__checkbox-link"
+                                    >Правилами користування Сайтом</a
+                                    >
+                                </p>
+                            </div>
+                            <div class="form__submit-btn-wrapper">
+                                <input
+                                        type="submit"
+                                        class="form__submit-btn btn-color"
+                                        value="Продовжити"
+                                />
+                                <p class="form__submit-btn-text">
+                                    Вже є акаунт?
+                                    <a href="#" class="form__submit-link">Увійти в акаунт</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img
+                                    src="../../../images/logo.svg"
+                                    alt="logo"
+                                    class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <p>(941) 867-1761</p>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../../index.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кандідати</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/vacancies-page.css">
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"
+                    ><img src="../../images/logo.svg" alt="logo" class="logo__img"
+                    /></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Про компанію</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Новини</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user">
+                    <div class="header__tab">
+                        <a class="header__tab-btn">
+                            Пошукачу
+                        </a>
+                        <a class="header__tab-btn user__actions-btn-active">
+                            Роботодавцю
+                        </a>
+                    </div>
+                    <a href="#" class="search__link">
+                        <img
+                                src="../../images/log-in.svg"
+                                alt="search"
+                                class="search__img"
+                        /><span>Увійти</span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class=" bg-blur bg-blur__candidate-page"></div>
+
+    <main class="main">
+        <div class="container">
+            <div class="vacancies__search-location-wrapper">
+                <div class="search-location">
+                    <form action="#" class="search-location__form">
+                        <div class="search-location__form-input">
+                            <img
+                                    src="../../images/search-md.svg"
+                                    alt="search"
+                                    class="search-location__form-img"
+                            />
+                            <label for="search" class="label-hidden">Пошук вакансії</label>
+                            <input
+                                    type="search"
+                                    id="search"
+                                    name="search"
+                                    class="search-location__input"
+                                    placeholder="Введіть вакансію"
+                            />
+                            <div class="select__vector"></div>
+                            <div class="search-location__select-wrapper">
+                                <label class="label-hidden">Місто</label>
+                                <input class="search-location__select" type="text" placeholder="Місто" value="Вся Україна">
+                                <ul class="search-location__select-list open">
+                                    <li class="search-location__select-item">Київ</li>
+                                    <li class="search-location__select-item">Дніпро</li>
+                                    <li class="search-location__select-item">Харьків</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <button type="submit" class="search-location__btn btn-color text-btn">
+                            Знайти роботу
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <section>
+                <div class="candidate__blocks-wrapper">
+                    <div class="candidate__left">
+                        <div class="vacancies__filter-block">
+                            <p class="title-sm"> 148 Кандидатів </p>
+                            <div class="search__filter">
+                                <img src="../../images/sort.svg" alt="filter" class="search__filter-img">
+                                <button class="search__filter-btn">Спочатку нові</button>
+                            </div>
+                        </div>
+
+                        <ul class="candidate__cards">
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img"
+                                                     src="../../images/candidate-img.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="candidate__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="candidate__card-subtitle">
+                                                    <p class="candidate__card-name">Андрій Коц, <span
+                                                            class="candidate__card-age">35 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-purple">Готовий до переїзду
+                                            </li>
+                                            <li class="candidate__requirements-item type-blue">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-green">Повна / Неповна
+                                                зайнятість
+                                            </li>
+                                            <li class="candidate__requirements-item hashtags-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="candidate__experience-block">
+                                        <ul class="candidate__experience-list">
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в Матролюкс,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 2 роки 3 місяці</p>
+                                                <p class="candidate__experience-time-now">(жов.2022 - тепершній час)</p>
+                                            </li>
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в LuxSoft,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 9 місяців</p>
+                                                <p class="candidate__experience-time-now">(січ.2022 - жов.2022)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="candidate__timer-fill-wrapper">
+                                        <div class="timer-fill-block">
+                                            <p class="timer-fill-item">11 хвилин тому</p>
+                                            <p class="timer-fill-item">•</p>
+                                            <p class="timer-fill-item">Заповнено на 75%</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="candidate__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="vacancies__card-bottom-btn btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img"
+                                                     src="../../images/candidate-img.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="candidate__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="candidate__card-subtitle">
+                                                    <p class="candidate__card-name">Андрій Коц, <span
+                                                            class="candidate__card-age">35 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-purple">Готовий до переїзду
+                                            </li>
+                                            <li class="candidate__requirements-item type-blue">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-green">Повна / Неповна
+                                                зайнятість
+                                            </li>
+                                            <li class="candidate__requirements-item hashtags-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="candidate__experience-block">
+                                        <ul class="candidate__experience-list">
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в Матролюкс,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 2 роки 3 місяці</p>
+                                                <p class="candidate__experience-time-now">(жов.2022 - тепершній час)</p>
+                                            </li>
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в LuxSoft,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 9 місяців</p>
+                                                <p class="candidate__experience-time-now">(січ.2022 - жов.2022)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="candidate__timer-fill-wrapper">
+                                        <div class="timer-fill-block">
+                                            <p class="timer-fill-item">11 хвилин тому</p>
+                                            <p class="timer-fill-item">•</p>
+                                            <p class="timer-fill-item">Заповнено на 75%</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="candidate__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="vacancies__card-bottom-btn btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img"
+                                                     src="../../images/candidate-img.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="candidate__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="candidate__card-subtitle">
+                                                    <p class="candidate__card-name">Андрій Коц, <span
+                                                            class="candidate__card-age">35 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-purple">Готовий до переїзду
+                                            </li>
+                                            <li class="candidate__requirements-item type-blue">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-green">Повна / Неповна
+                                                зайнятість
+                                            </li>
+                                            <li class="candidate__requirements-item hashtags-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="candidate__experience-block">
+                                        <ul class="candidate__experience-list">
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в Матролюкс,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 2 роки 3 місяці</p>
+                                                <p class="candidate__experience-time-now">(жов.2022 - тепершній час)</p>
+                                            </li>
+                                            <li class="candidate__experience-item">
+                                                <p class="candidate__experience-place">Менеджер відділу в LuxSoft,
+                                                    ООО</p>
+                                                <p class="candidate__experience-time">— 9 місяців</p>
+                                                <p class="candidate__experience-time-now">(січ.2022 - жов.2022)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="candidate__timer-fill-wrapper">
+                                        <div class="timer-fill-block">
+                                            <p class="timer-fill-item">11 хвилин тому</p>
+                                            <p class="timer-fill-item">•</p>
+                                            <p class="timer-fill-item">Заповнено на 75%</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="candidate__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="vacancies__card-bottom-btn btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="vacancies__card-bottom-btn btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="vacancies-page__pagination">
+                            <div class="pagination__block">
+                                <div class="pagination">
+                                    <a href="#"><img src="../../images/vector-left.svg" alt=""></a>
+                                    <a class="active" href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">...</a>
+                                    <a href="#">25</a>
+                                    <a href="#"><img src="../../images/vector-right.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="candidate__right">
+                        <div class="right-content__sticky">
+                            <details>
+                                <summary>Категорія</summary>
+                                <ul class="drop-down__list">
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Повна зайнятість</span>
+                                            <input type="checkbox" checked="checked"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">1650</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Неповна зайнятість</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">250</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Позмінна робота</span>
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">96</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Дистанційна</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">4</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Зайнятість</summary>
+                                <ul class="drop-down__list">
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Повна зайнятість</span>
+                                            <input type="checkbox" checked="checked"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">1650</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Неповна зайнятість</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">250</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Позмінна робота</span>
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">96</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Дистанційна</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">4</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Підходить для</summary>
+                                <ul class="drop-down__list">
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Повна зайнятість</span>
+                                            <input type="checkbox" checked="checked"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">1650</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Неповна зайнятість</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">250</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Позмінна робота</span>
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">96</span>
+                                        </div>
+                                    </li>
+                                    <li class="drop-down__item">
+                                        <label class="container-label ">
+                                            <span class="text-medium-16">Дистанційна</span>
+                                            <input type="checkbox"/>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div class="select__option-value-wrapper">
+                                            <span class="select__option-value">4</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <p>(941) 867-1761</p>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../select.js"></script>
+</body>
+</html>

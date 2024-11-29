@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Створення вакансії</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/create-vacancy.css" />
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__inner-left">
+                        <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo"
+                                class="logo__img"></a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                                <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!--            user-block auth-->
+
+                    <div class="header__inner-right">
+                        <button class="header__create-btn">Створити резюме</button>
+                        <div class="header__user-block">
+                            <img src="../../images/user-photo.png" alt="header__profile-img"
+                                class="header__profile-img">
+                            <p class="header__user-name">Аліса Мурченко</p>
+                        </div>
+                    </div>
+
+                    <!--            user-block no auth-->
+
+                    <!--                <div class="user">-->
+                    <!--                    <div class="header__tab">-->
+                    <!--                        <a class="header__tab-btn">-->
+                    <!--                            Пошукачу-->
+                    <!--                        </a>-->
+                    <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                    <!--                            Роботодавцю-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
+                    <!--                    <a href="#" class="search__link">-->
+                    <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                    <!--                </div>-->
+                </div>
+            </div>
+        </header>
+
+        <div class="bg-blur bg-blur__create-vacancy"></div>
+        <main>
+            <div class="container">
+                <div class="create-vacancy__inner">
+                    <h1 class="title-xl">Створення вакансії</h1>
+                    <div class="create-vacancy__content-wrapper">
+                        <section class="create-vacancy__content-left">
+                            <form class="form__inner">
+                                <fieldset id="info" class="form-field section">
+                                    <h3 class="title-article">Основна інформація</h3>
+                                    <div class="form__inputs-wrapper">
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="role" class="text-medium-16">Назва посади</label>
+                                            <div class="create-resume__select-wrapper create-resume__select-size-lg">
+
+                                                <input id="role" class="select__input" type="text"
+                                                    placeholder="Менеджер з продажу">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                    alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">Менеджер</li>
+                                                    <li class="select__border-item">Менеджер</li>
+                                                    <li class="select__border-item">Менеджер</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <span class="text-medium-16">Категорія</span>
+                                            <div class="type-category-wrapper">
+                                                <span class="type-category">Продаж, закупівля</span>
+                                            </div>
+
+                                        </div>
+                                        <button class="btn-no-border btn-icon form__add-btn-2">
+                                            <img src="../../images/add-circle_green.svg" alt="add-circle" />
+                                            Додати курс або тренінг
+                                        </button>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="conditions" class="form-field section">
+                                    <h3 class="title-article">Умови роботи</h3>
+                                    <div class="form__inputs-wrapper">
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="place" class="text-medium-16">Місто роботи</label>
+                                            <input id="place" class="form__input create-vacancy__input-size" type="text"
+                                                placeholder="Місто" />
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="address" class="text-medium-16">Адреса роботи</label>
+                                            <input id="address" class="form__input create-vacancy__input-size"
+                                                type="text" placeholder="Вулиця та будинок" />
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="tel" class="text-medium-16">Номер телефону</label>
+                                            <input id="tel" class="form__input create-vacancy__input-size" type="tel"
+                                                placeholder="+38(XXX) XXX XX XX" />
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label class="text-medium-16">Зарплата</label>
+                                            <div class="input-salary-right">
+                                                <label for="from" class="label-hidden">from</label>
+                                                <input id="from" class="form__input salary__input" type="text"
+                                                    placeholder="від" />
+                                                <span>-</span>
+                                                <label for="to" class="label-hidden"></label>
+                                                <input id="to" class="form__input salary__input" type="text"
+                                                    placeholder="до" />
+                                            </div>
+                                        </div>
+                                        <div class="input-add__wrapper">
+                                            <label for="student" class="create__container-label">
+                                                <input class="personal__checkbox" id="student" type="checkbox" />
+                                                <span class="create__checkmark"></span>
+                                            </label>
+                                            <label for="student">Не вказувати</label>
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="schedule" class="text-medium-16">Графік роботи</label>
+                                            <div class="create-resume__select-wrapper create-resume__select-size-lg">
+
+                                                <input id="schedule" class="select__input" type="text"
+                                                    placeholder="5/2">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                    alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">5/2</li>
+                                                    <li class="select__border-item">2/2</li>
+                                                    <li class="select__border-item">3/3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <label for="hashtags" class="text-medium-16">Хештеги</label>
+                                            <input id="hashtags" class="form__input create-vacancy__input-size"
+                                                type="text" placeholder="#" />
+                                        </div>
+                                        <div class="form__input-horizontal-wrapper">
+                                            <ul class="form__input-checkbox-wrapper">
+                                                <li class="form__input-checkbox-item">
+                                                    <p class="title-checkbox-item">Тип зайнятості*</p>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="full" class="create__container-label">
+                                                            <input class="personal__checkbox" id="full"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="full">Повна
+                                                            зайнятість</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="part" class="create__container-label">
+                                                            <input class="personal__checkbox" id="part"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="part">Неповна
+                                                            зайнятість</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="stuff" class="create__container-label">
+                                                            <input class="personal__checkbox" id="stuff"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="stuff">Позмінна
+                                                            робота</label>
+                                                    </div>
+                                                </li>
+                                                <li class="form__input-checkbox-item">
+                                                    <p class="title-checkbox-item">Характер роботи</p>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="practice" class="create__container-label">
+                                                            <input class="personal__checkbox" id="practice"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox"
+                                                            for="practice">Стажування/практика</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="remote" class="create__container-label">
+                                                            <input class="personal__checkbox" id="remote"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="remote">Віддалена
+                                                            робота</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="office" class="create__container-label">
+                                                            <input class="personal__checkbox" id="office"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="office">Робота в
+                                                            офісі</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <label for="hybrid" class="create__container-label">
+                                                            <input class="personal__checkbox" id="hybrid"
+                                                                type="checkbox" />
+                                                            <span class="create__checkmark"></span>
+                                                        </label>
+                                                        <label class="label-checkbox" for="hybrid">Гібридна
+                                                            робота</label>
+                                                    </div>
+                                                </li>
+                                                <li class="form__input-checkbox-item">
+                                                    <p class="title-checkbox-item">
+                                                        Готовність до переїзду
+                                                    </p>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <input id="ready" type="radio" name="work-schedule"
+                                                            class="form__radio-input" />
+                                                        <label class="label-checkbox" for="ready">Можу виїхати за
+                                                            потреби</label>
+                                                    </div>
+                                                    <div class="form__checkbox-wrapper">
+                                                        <input id="no-ready" type="radio" name="work-schedule"
+                                                            class="form__radio-input" />
+                                                        <label class="label-checkbox" for="no-ready">НЕ готовий до
+                                                            переїзду</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset id="desc" class="form-field section">
+                                    <h3 class="title-article">Опис посади</h3>
+                                    <div class="form__inputs-wrapper">
+                                        <label for="desc-role" class="label-hidden">Адреса роботи</label>
+                                        <textarea id="desc-role" class="create-vacancy__textarea"
+                                            maxlength="500"></textarea>
+                                    </div>
+                                    <p class="textarea-description">
+                                        Вимоги, обов’язки, проект, умови праці. Використовуйте
+                                        <b>**зірочки**</b>
+                                        для bold
+                                    </p>
+                                </fieldset>
+                                <div class="create-vacancy__checkbox-wrapper">
+                                    <label for="duplicate" class="create__container-label">
+                                        <input class="personal__checkbox" id="duplicate" type="checkbox" />
+                                        <span class="create__checkmark"></span>
+                                    </label>
+                                    <label for="duplicate">Не вказувати</label>
+                                </div>
+                                <div class="create-vacancy__button-wrapper">
+                                    <button type="submit" class="create-vacancy__create-btn btn-color">
+                                        Розмістити вакансію
+                                    </button>
+                                    <button type="button" class="create-vacancy__view-btn btn-transparent">
+                                        Переглянути
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+                        <aside class="create-vacancy__content-right">
+                            <div class="right-content__sticky">
+                                <div class="news-item__article-right">
+                                    <div class="container-stepper">
+                                        <div class="step">
+                                            <div class="v-stepper">
+                                                <div class="circle"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <a class="active" href="#info">Основна інформація</a>
+                                        </div>
+                                        <div class="step">
+                                            <div class="v-stepper">
+                                                <div class="circle"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <a href="#conditions">Умови роботи</a>
+                                        </div>
+                                        <div class="step">
+                                            <div class="v-stepper">
+                                                <div class="circle"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <a href="#desc">Опис вакансії</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Про компанію</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Контакти</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Допомога</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Корисні новини</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Оферта</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Умови користування</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Політика конфеденційності</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Фейсбук</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Телеграм</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Вайбер</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">Інстаграм</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer__logo-block">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link">
+                                <img src="../../images/logo.svg" alt="logo" class="logo__img" />
+                            </a>
+                        </li>
+                        <li class="footer__list-item footer__info">
+                            <a href="#">info@gmail.com</a>
+                            <a href="tel:0389418671761">(941) 867-1761</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__btn btn-transparent">Для роботодавця</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../../index.js"></script>
+</body>
+
+</html>

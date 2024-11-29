@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <meta charset="UTF-8">
+    <title>Стаття</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <!--    to see change in the "modal-content" class "display:none" to "display:block" style.css-->
+
+    <div class="modal-content">
+        <img class="close" src="../../../images/close.svg" alt="#">
+        <div class="stepper-wrapper">
+            <div class="stepper-item ">
+                <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg" alt="#"></div>
+                <div class="step-name ">Email</div>
+            </div>
+            <div class="stepper-item ">
+                <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg" alt="#"></div>
+                <div class="step-name">Підтвердження</div>
+            </div>
+            <div class="stepper-item step-completed">
+                <div class="step-counter ">3</div>
+                <div class="step-name">Особисті дані</div>
+            </div>
+        </div>
+        <h3 class="form__title">Реєстрація</h3>
+        <p class="form__subtitle">Введіть свої особисті дані, щоб завершити реєстрацію</p>
+        <form action="#" class="form">
+            <div class="form__input-wrapper">
+                <label for="name" class="label-hidden">Ім’я та Прізвище</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Ім’я та Прізвище"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="city2" class="label-hidden">Місто</label>
+                <select name="city2" id="city2" class="form__input form__select">
+                    <option value="city">Місто</option>
+                    <option value="city">Київ</option>
+                    <option value="city">Львів</option>
+                    <option value="city">Харків</option>
+                    <option value="city">Одеса</option>
+                </select>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="company" class="label-hidden">Назва компанії</label>
+                <input type="text" id="company" name="company" class="form__input" placeholder="Назва компанії"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="industry" class="label-hidden">Місто</label>
+                <select id="industry" name="industry" class="form__input form__select">
+                    <option value="city">Галузь компанії</option>
+                    <option value="city">Галузь1</option>
+                    <option value="city">Галузь2</option>
+                    <option value="city">Галузь3</option>
+                    <option value="city">Галузь4</option>
+                </select>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="role" class="label-hidden">Посада</label>
+                <input type="text" id="role" name="role" class="form__input" placeholder="Посада"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="password" class="label-hidden">Пароль для входу</label>
+                <input type="password" id="password" name="password" class="form__input"
+                       placeholder="Пароль для входу"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="repeat-password" class="label-hidden">Повторити пароль</label>
+                <input type="password" id="repeat-password" name="repeat-password" class="form__input"
+                       placeholder="Повторити пароль"/>
+            </div>
+            <div class="form__double-input-wrapper">
+                <a href="#" class="form__link-back btn-transparent">Назад</a>
+                <input type="submit" class="form__submit-btn btn-color" value="Створити акаунт">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../../../index.js"></script>
+</body>
+</html>

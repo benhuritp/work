@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Особистий кабінет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/personal.css"/>
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                <div class="user">-->
+                <!--                    <div class="header__tab">-->
+                <!--                        <a class="header__tab-btn">-->
+                <!--                            Пошукачу-->
+                <!--                        </a>-->
+                <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                            Роботодавцю-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <a href="#" class="search__link">-->
+                <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="personal__inner">
+                <div class="title-wrapper-start">
+                    <h1 class="title-xl">Мій акаунт</h1>
+                    <a class="link-sm" href="#">Дивитися публічний профіль</a>
+                </div>
+
+                <div class="personal__content-wrapper">
+                    <aside class="personal__content-left">
+                        <div class="personal__content-left-wrapper">
+                            <p class="aside-subtitle subtitle">Налаштування профілю</p>
+                            <nav>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18"><a href="#">Мої резюме</a></li>
+                                    <li class="aside-nav__list-item text-medium-18"><a href="#">Історія відгуків</a></li>
+                                </ul>
+                                <div class="aside-nav__line"></div>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Рекомендовані вакансії</a>
+                                        <p class="vacancy-info__item-value">12</p>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Збережені вакансії</a>
+                                        <p class="vacancy-info__item-value">4</p>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="personal__logout__link-wrapper">
+                                <a href="#" class="logout__link text-medium-18">
+                                    <img
+                                            src="../../images/log-in-red.svg"
+                                            alt="search"
+                                            class="search__img"
+                                    />Вийти</a
+                                >
+                            </div>
+                        </div>
+                    </aside>
+                    <section class="personal__content-right">
+                        <form class="form__inner">
+                            <fieldset class="form-field">
+                                <h3 class="title-article">Особиста інформація</h3>
+                                <div class="form__inputs-photo-block">
+                                    <img
+                                            src="../../images/resume-img.png"
+                                            alt="photo"
+                                            class="personal__photo"
+                                    />
+                                    <div class="form__inputs-photo-btn-wrapper">
+                                        <button class="update-photo__btn btn-transparent">
+                                            Оновити
+                                        </button>
+                                        <button class="delete-photo__btn btn-transparent__delete">
+                                            <img src="../../images/delete-red.svg" alt="delete"/>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="name-resume" class="text-medium-16"
+                                        >Ім’я та Прізвище*</label
+                                        >
+                                        <input
+                                                id="name-resume"
+                                                class="form__input input-size-lg"
+                                                type="text"
+                                                placeholder="Іван Кайдаш"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="city-resume" class="text-medium-16"
+                                        >Місто*</label
+                                        >
+                                        <input
+                                                id="city-resume"
+                                                class="form__input input-size-lg"
+                                                type="text"
+                                                placeholder="Київ"
+                                        />
+                                    </div>
+
+                                    <div class="form__select-horizontal-wrapper">
+                                        <label class="text-medium-16 form__select-label">Дата народження*</label>
+                                        <div class="create-resume__select-block">
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume1" class="label-hidden">День</label>
+                                                <input id="resume1" class="select__input" type="text" placeholder="12">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">13</li>
+                                                    <li class="select__border-item">14</li>
+                                                    <li class="select__border-item">15</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume" class="label-hidden">Місяць</label>
+                                                <input id="resume" class="select__input" type="text"
+                                                       placeholder="Грудня">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">Січень</li>
+                                                    <li class="select__border-item">Лютий</li>
+                                                    <li class="select__border-item">Березень</li>
+                                                </ul>
+                                            </div>
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume2" class="label-hidden">Рік</label>
+                                                <input id="resume2" class="select__input" type="text"
+                                                       placeholder="1982">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">1983</li>
+                                                    <li class="select__border-item">1984</li>
+                                                    <li class="select__border-item">1985</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="phone-resume" class="text-medium-16"
+                                        >Телефон*</label
+                                        >
+                                        <input
+                                                id="phone-resume"
+                                                class="form__input input-size-lg"
+                                                type="tel"
+                                                placeholder="(066) 000 00 00"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="email-resume" class="text-medium-16"
+                                        >Ел.Пошта</label
+                                        >
+                                        <input
+                                                id="email-resume"
+                                                class="form__input input-size-lg"
+                                                type="email"
+                                                placeholder="example@gmail.com"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="social-resume" class="text-medium-16"
+                                        >Соціальні мережі</label
+                                        >
+                                        <input
+                                                id="social-resume"
+                                                class="form__input input-size-lg"
+                                                type="text"
+                                                placeholder="Facebook, Instagram, Linkedin"
+                                        />
+                                    </div>
+                                    <button class="input-add__wrapper">
+                                        <img
+                                                class="input-add__btn"
+                                                src="../../images/add-circle.svg"
+                                                alt="plus"
+                                        />
+                                        Додати посилання
+                                    </button>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="submit-personal" class="label-hidden"
+                                        >Пароль</label
+                                        >
+                                        <input
+                                                id="submit-personal"
+                                                class="form__input btn-color text-btn-16"
+                                                type="submit"
+                                                value="Зберегти зміни"
+                                        />
+                                    </div>
+                                    <div class="input-add__left-wrapper">
+                                        <button class="btn-delete form__add-btn-2">
+                                                <img
+                                                        src="../../images/delete-red-no-border.svg"
+                                                        alt="add-circle"
+                                                />
+                                                Видалити профіль
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form class="form__inner">
+                            <fieldset class="form-field">
+                                <div class="form__subtitle-wrapper">
+                                    <h3 class="title-article">Зміна паролю</h3>
+                                    <p class="subtitle-description">Остання зміна: 23.06.2023</p>
+                                </div>
+
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="password-personal" class="text-medium-16"
+                                        >Поточний пароль</label
+                                        >
+                                        <input
+                                                id="password-personal"
+                                                class="form__input input-size-lg"
+                                                type="password"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="password-personal1" class="text-medium-16"
+                                        >Новий пароль</label
+                                        >
+                                        <input
+                                                id="password-personal1"
+                                                class="form__input input-size-lg"
+                                                type="password"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="password-personal2" class="text-medium-16"
+                                        >Повторити пароль</label
+                                        >
+                                        <input
+                                                id="password-personal2"
+                                                class="form__input input-size-lg"
+                                                type="password"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="password-personal3" class="label-hidden"
+                                        >Пароль обновить</label
+                                        >
+                                        <input
+                                                id="password-personal3"
+                                                class="form__input btn-color text-btn-16"
+                                                type="submit"
+                                                value="Оновити пароль"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <a href="tel:0389418671761">(941) 867-1761</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../index.js"></script>
+</body>
+</html>

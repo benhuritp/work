@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Особистий кабінет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/personal.css"/>
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                <div class="user">-->
+                <!--                    <div class="header__tab">-->
+                <!--                        <a class="header__tab-btn">-->
+                <!--                            Пошукачу-->
+                <!--                        </a>-->
+                <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                            Роботодавцю-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <a href="#" class="search__link">-->
+                <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="personal__inner">
+                <div class="title-wrapper-start">
+                    <h1 class="title-xl">Мій акаунт</h1>
+                    <a class="link-sm" href="#">Дивитися публічний профіль</a>
+                </div>
+
+                <div class="personal__content-wrapper">
+                    <aside class="personal__content-left">
+                        <div class="personal__content-left-wrapper">
+                            <p class="aside-subtitle subtitle">Налаштування профілю</p>
+                            <nav>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18 aside-nav__active"><a href="#">Мої резюме</a></li>
+                                    <li class="aside-nav__list-item text-medium-18"><a href="#">Історія відгуків</a></li>
+                                </ul>
+                                <div class="aside-nav__line"></div>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Рекомендовані вакансії</a>
+                                        <p class="vacancy-info__item-value">12</p>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Збережені вакансії</a>
+                                        <p class="vacancy-info__item-value">4</p>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="personal__logout__link-wrapper">
+                                <a href="#" class="logout__link text-medium-18">
+                                    <img
+                                            src="../../images/log-in-red.svg"
+                                            alt="search"
+                                            class="search__img"
+                                    />Вийти</a
+                                >
+                            </div>
+                        </div>
+                    </aside>
+                    <section class="personal__content-right">
+                        <ul class="personal__vacancy-list">
+                            <li class="personal__vacancy-item">
+                                <div class="personal__vacancy-item-left">
+                                    <div class="personal__item-title-wrapper">
+                                        <h3 class="personal__vacancy-title">Менеджер з продажу</h3>
+                                        <p class="personal__item-title-text">Оновлено 3 місяці тому</p>
+                                    </div>
+                                </div>
+
+                                <div class="personal__title-icon-wrapper">
+                                    <div class="personal__item-info-wrapper">
+                                        <div class="personal__item-info">
+                                            <p class="subtitle-text">250</p>
+                                            <p class="subtitle-description">показів</p>
+                                        </div>
+                                        <div class="personal__item-info">
+                                            <p class="subtitle-text">57</p>
+                                            <p class="subtitle-description">переглядів</p>
+                                        </div>
+                                    </div>
+                                    <img
+                                            src="../../images/edit.svg"
+                                            alt="edit"
+                                            class="personal__title-edit-icon"
+                                    />
+                                    <img
+                                            class="more-vertical-icon"
+                                            src="../../images/more-vertical.svg"
+                                            alt="more-vertical"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="add-btn-item add-btn-icon personal__btn-add-resume btn-transparent">
+                            Cтворити ще одне резюме
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <a href="tel:0389418671761">(941) 867-1761</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../index.js"></script>
+</body>
+</html>

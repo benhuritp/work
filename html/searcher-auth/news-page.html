@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новини</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/searcher-auth/main-searcher-auth.css">
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                <div class="user">-->
+                <!--                    <div class="header__tab">-->
+                <!--                        <a class="header__tab-btn">-->
+                <!--                            Пошукачу-->
+                <!--                        </a>-->
+                <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                            Роботодавцю-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <a href="#" class="search__link">-->
+                <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </header>
+
+    <div class=" bg-blur bg-blur__news-page"></div>
+
+    <main>
+        <div class="container">
+            <h1 class="articles__title">Статті про роботу і працевлаштування</h1>
+            <nav class="articles__nav">
+                <ul class="articles__list">
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Поради шукачам</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Саморозвиток</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Робота в колективі</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Поради шукачам</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Кар’єра</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Саморозвиток</button>
+                    </li>
+                    <li class="articles__list-item">
+                        <button class="articles__btn">Робота в колективі</button>
+                    </li>
+                </ul>
+            </nav>
+            <search class="search-articles">
+                <div class="search-articles__block">
+                    <p class="search-articles__subtitles">Статті<span
+                            class="search-articles__subtitles-number">(123)</span></p>
+                    <form action="#" class="search-articles__form">
+                        <div class="search-articles__form-input">
+                            <img src="../../images/search-md.svg" alt="search" class="search-articles__form-img">
+                            <label for="search-articles" class="search-articles__form-label label-hidden">Пошук</label>
+                            <input type="text" id="search-articles" class="search-articles__input" placeholder="Пошук">
+                        </div>
+                    </form>
+                    <div class="search__filter">
+                        <img src="../../images/sort.svg" alt="filter" class="search__filter-img">
+                        <button class="search__filter-btn">Спочатку нові</button>
+                    </div>
+                </div>
+            </search>
+            <section class="categories-cards">
+                <ul class="categories-cards__block">
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories-cards__block-item">
+                        <div class="categories-cards__block-img-wrapper">
+                            <img class="categories-cards__block-img" src="../../images/news-img.png" alt="image">
+                        </div>
+
+                        <button class="categories-cards__btn type-blue">Назва категорії</button>
+                        <p class="categories-cards__block-title">Роботодавці вимагають знання англійської та розміщують
+                            вакансії для ветеранів.</p>
+                        <p class="categories-cards__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="categories-cards__block-actions">
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/comment.svg" alt="comment">
+                                <p>2</p>
+                            </div>
+                            <div class="categories-cards__actions-item">
+                                <img src="../../images/eye.svg" alt="eye">
+                                <p>12</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="categories-cards__pagination">
+                    <div class="pagination__block">
+                        <div class="pagination">
+                            <a href="#"><img src="../../images/vector-left.svg" alt=""></a>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">...</a>
+                            <a href="#">25</a>
+                            <a href="#"><img src="../../images/vector-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <p>(941) 867-1761</p>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../index.js"></script>
+</body>
+</html>

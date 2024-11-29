@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Реєстрація-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/reset.css"/>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"
+                    ><img src="../../../images/logo.svg" alt="logo" class="logo__img"
+                    /></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Про компанію</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Новини</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user">
+                    <ul class="user__actions">
+                        <li class="user__actions-item">
+                            <a href="#" class="user__actions-btn user__actions-btn-active"
+                            >Пошукачу</a
+                            >
+                        </li>
+                        <li class="user__actions-item">
+                            <a href="#" class="user__actions-btn ">Роботодавцю</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="search__link">
+                        <img
+                                src="../../../images/log-in.svg"
+                                alt="search"
+                                class="search__img"
+                        /><span>Увійти</span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+            <section class="registration">
+                <div class="registration-content">
+                    <div class="stepper-wrapper">
+                        <div class="stepper-item ">
+                            <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg"
+                                                                alt="#"></div>
+                            <div class="step-name ">Номер телефону</div>
+                        </div>
+                        <div class="stepper-item ">
+                            <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg"
+                                                                alt="#"></div>
+                            <div class="step-name">Підтвердження</div>
+                        </div>
+                        <div class="stepper-item step-completed">
+                            <div class="step-counter ">3</div>
+                            <div class="step-name">Особисті дані</div>
+                        </div>
+                    </div>
+                    <h3 class="form__title">Реєстрація</h3>
+                    <p class="form__subtitle">Введіть свої особисті дані, щоб завершити реєстрацію</p>
+                    <form action="#" class="form form__mt-8">
+                        <div class="form__input-wrapper">
+                            <label for="name" class="text-medium-16">Введіть імʼя</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Ім’я"/>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label for="name2" class="text-medium-16">Введіть прізвище</label>
+                            <input type="text" id="name2" name="name" class="form__input" placeholder="Прізвище"/>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label for="age" class="text-medium-16">Введіть ваш вік (14-100)</label>
+                            <input type="text" id="age" name="name" class="form__input" placeholder="Вік"/>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label for="city" class=text-medium-16l">Введіть місто</label>
+                            <input type="text" id="city" name="city" class="form__input" placeholder="Місто"/>
+                        </div>
+                        <div class="form__double-password-wrapper">
+                            <div class="form__input-label-wrapper">
+                                <label for="pas1" class="text-medium-16">Пароль</label>
+                                <div class="form__input-password-wrapper">
+                                    <label for="pas1" class="label-hidden">Пароль</label>
+                                    <input id="pas1" class="input__password" maxlength="1" type="password">
+                                    <label for="pas2" class="label-hidden">Пароль</label>
+                                    <input id="pas2" class="input__password" maxlength="1" type="password">
+                                    <label for="pas3" class="label-hidden">Пароль</label>
+                                    <input id="pas3" class="input__password" maxlength="1" type="password">
+                                    <label for="pas4" class="label-hidden">Пароль</label>
+                                    <input id="pas4" class="input__password" maxlength="1" type="password">
+                                </div>
+                            </div>
+
+                            <div class="form__input-label-wrapper">
+                                <label for="pas5" class="text-medium-16">Повторіть пароль</label>
+                                <div class="form__input-password-wrapper">
+                                    <label for="pas5" class="label-hidden">Пароль</label>
+                                    <input id="pas5" class="input__password" maxlength="1" type="password">
+                                    <label for="pas6" class="label-hidden">Пароль</label>
+                                    <input id="pas6" class="input__password" maxlength="1" type="password">
+                                    <label for="pas7" class="label-hidden">Пароль</label>
+                                    <input id="pas7" class="input__password" maxlength="1" type="password">
+                                    <label for="pas8" class="label-hidden">Пароль</label>
+                                    <input id="pas8" class="input__password" maxlength="1" type="password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__double-input-wrapper">
+                            <a href="#" class="form__link-back btn-transparent">Назад</a>
+                            <input type="submit" class="form__submit-btn btn-color" value="Продовжити">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../../images/logo.svg" alt="logo" class="logo__img"
+                            /></a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../../index.js"></script>
+</body>
+</html>

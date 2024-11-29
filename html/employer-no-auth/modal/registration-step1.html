@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <meta charset="UTF-8">
+    <title>Стаття</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <!--    to see change in the "modal-content" class "display:none" to "display:block" style.css-->
+
+    <div class="modal-content">
+        <img class="close" src="../../../images/close.svg" alt="#">
+        <div class="stepper-wrapper">
+            <div class="stepper-item step-completed">
+                <div class="step-counter">1</div>
+                <div class="step-name">Email</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">2</div>
+                <div class="step-name">Підтвердження</div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter">3</div>
+                <div class="step-name">Особисті дані</div>
+            </div>
+        </div>
+        <h3 class="form__title">Реєстрація</h3>
+        <div class="user__actions-registration">
+            <ul class="user__actions">
+                <li class="user__actions-item ">
+                    <a href="#" class="user__actions-btn ">Пошукачу</a>
+                </li>
+                <li class="user__actions-item">
+                    <a href="#" class="user__actions-btn user__actions-btn-active">Роботодавцю</a>
+                </li>
+            </ul>
+        </div>
+        <form action="#" class="form">
+            <div class="form__input-wrapper-registration-top-24">
+                <label for="email" class="label-hidden">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="Введіть свій email"/>
+            </div>
+            <div class="form__checkbox-wrapper">
+                <label for="rules" class="label-hidden">Погоджуюсь з Політикою конфіденційності та
+                    Правилами користування Сайтом</label>
+                <input type="checkbox" id="rules" name="rules" class="form__checkbox"/>
+                <p class="form__checkbox-text">Я погоджуюсь з <a href="#" class="form__checkbox-link">Політикою
+                    конфідейності</a> та <a
+                        href="#" class="form__checkbox-link">Правилами користування Сайтом</a></p>
+            </div>
+            <div class="form__submit-btn-wrapper">
+                <input type="submit" class="form__submit-btn btn-color" value="Продовжити">
+            </div>
+            <p class="form__submit-btn-text">Вже є акаунт? <a
+                    href="#" class="form__submit-link">Увійти в акаунт</a></p>
+        </form>
+        <p class="form__text"></p>
+    </div>
+</div>
+<script src="../../../index.js"></script>
+</body>
+</html>

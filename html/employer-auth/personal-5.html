@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Особистий кабінет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/personal.css"/>
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                <div class="user">-->
+                <!--                    <div class="header__tab">-->
+                <!--                        <a class="header__tab-btn">-->
+                <!--                            Пошукачу-->
+                <!--                        </a>-->
+                <!--                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                            Роботодавцю-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    <a href="#" class="search__link">-->
+                <!--                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="personal__inner">
+                <div class="title-wrapper-start">
+                    <h1 class="title-xl">Мій акаунт</h1>
+                </div>
+
+                <div class="personal__content-wrapper">
+                    <aside class="personal__content-left">
+                        <div class="personal__content-left-wrapper">
+                            <p class="aside-subtitle subtitle">Налаштування профілю</p>
+                            <nav>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Вакансії</a>
+                                        <p class="vacancy-info__item-value">3</p>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Відгуки</a>
+                                        <p class="vacancy-info__item-value">123</p>
+                                    </li>
+                                </ul>
+                                <div class="aside-nav__line"></div>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Потенційни Кандидати</a>
+                                        <p class="vacancy-info__item-value">430</p>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18 aside-nav__active">
+                                        <a href="#">Збережені Кандидати</a>
+                                        <p class="vacancy-info__item-value">12</p>
+                                    </li>
+                                </ul>
+                                <div class="aside-nav__line"></div>
+                                <ul class="aside-nav__list">
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Аналітика</a>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Оплата</a>
+                                    </li>
+                                    <li class="aside-nav__list-item text-medium-18">
+                                        <a href="#">Реквізити</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="personal__logout__link-wrapper">
+                                <a href="#" class="logout__link text-medium-18">
+                                    <img
+                                            src="../../images/log-in-red.svg"
+                                            alt="search"
+                                            class="search__img"
+                                    />Вийти</a
+                                >
+                            </div>
+                        </div>
+                    </aside>
+                    <section class="personal__content-right">
+                        <ul class="candidate__cards">
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img" src="../../images/manager-3.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="personal__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="personal__card-subtitle">
+                                                    <p class="candidate__card-name">Марина, <span
+                                                            class="candidate__card-age">20 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-green">Готовий до переїзду</li>
+                                            <li class="candidate__requirements-item type-purple">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-blue">Повна / Неповна зайнятість</li>
+                                            <li class="candidate__requirements-item type-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="personal__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="personal__btn-color btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="personal__btn-transparent btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img" src="../../images/manager-3.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="personal__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="personal__card-subtitle">
+                                                    <p class="candidate__card-name">Марина, <span
+                                                            class="candidate__card-age">20 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-green">Готовий до переїзду</li>
+                                            <li class="candidate__requirements-item type-purple">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-blue">Повна / Неповна зайнятість</li>
+                                            <li class="candidate__requirements-item type-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="personal__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="personal__btn-color btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="personal__btn-transparent btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="candidate__cards-item">
+                                <div class="candidate__card">
+                                    <div class="candidate__card-top">
+                                        <div class="candidate__card-title-block">
+                                            <div class="candidate__card-title-left">
+                                                <img class="candidate__card-company-img" src="../../images/manager-3.png"
+                                                     alt="logo">
+                                            </div>
+                                            <div class="personal__card-title-right">
+                                                <h3 class="title-article">Менеджер з продажу</h3>
+                                                <div class="personal__card-subtitle">
+                                                    <p class="candidate__card-name">Марина, <span
+                                                            class="candidate__card-age">20 років</span></p>
+                                                    <div class="location-block">
+                                                        <img class="location-img" src="../../images/marker-pin-01.svg"
+                                                             alt="location">
+                                                        <p class="location-text">Дніпро</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies__card-top-salary">8 000 - 10 000 ₴</div>
+                                    </div>
+                                    <div class="candidate__requirements-block">
+                                        <ul class="candidate__requirements-list">
+                                            <li class="candidate__requirements-item type-green">Готовий до переїзду</li>
+                                            <li class="candidate__requirements-item type-purple">Вища освіта</li>
+                                            <li class="candidate__requirements-item type-blue">Повна / Неповна зайнятість</li>
+                                            <li class="candidate__requirements-item type-hot">3 роки досвіду</li>
+                                        </ul>
+                                    </div>
+                                    <div class="personal__card-bottom-wrapper">
+                                        <div class="vacancies__card-bottom">
+                                            <div class="vacancies__card-bottom-buttons">
+                                                <a href="#" class="personal__btn-color btn-color">Запропонувати
+                                                    вакансію</a>
+                                                <a href="#"
+                                                   class="personal__btn-transparent btn-transparent">Детальніше</a>
+                                            </div>
+                                            <label class="heart-icon__label text-medium-16">
+                                                <input class="heart-icon__input" type="checkbox">
+                                                <i></i>
+                                                <span>Зберегти</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="personal__btn-add-resume btn-transparent text-btn">
+                            Завантажити ще (9)
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <a href="tel:0389418671761">(941) 867-1761</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../index.js"></script>
+</body>
+</html>

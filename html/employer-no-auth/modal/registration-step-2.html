@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <meta charset="UTF-8">
+    <title>Стаття</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <!--    to see change in the "modal-content" class "display:none" to "display:block" style.css-->
+
+        <div class="modal-content">
+            <img class="close" src="../../../images/close.svg" alt="#">
+            <div class="stepper-wrapper">
+                <div class="stepper-item ">
+                    <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg" alt="#">
+                    </div>
+                    <div class="step-name ">Номер телефону</div>
+                </div>
+                <div class="stepper-item step-completed">
+                    <div class="step-counter">2</div>
+                    <div class="step-name">Підтвердження</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter">3</div>
+                    <div class="step-name">Особисті дані</div>
+                </div>
+            </div>
+            <h3 class="form__title">Реєстрація</h3>
+            <p class="form__subtitle">На вказану пошту надіслано код</p>
+            <form action="#" class="form">
+                <div class="form__input-wrapper-registration-top-24">
+                    <label for="code" class="label-hidden">Введіть код</label>
+                    <input type="text" id="code" name="code" class="form__input" placeholder="Введіть код" />
+                </div>
+
+                <p class="form__input-text">Відправити повторно через 57с.</p>
+                <div class="form__double-input-wrapper">
+                    <a href="#" class="form__link-back btn-transparent">Назад</a>
+                    <input type="submit" id="continue" name="continue" class="form__submit-btn btn-color"
+                        value="Продовжити">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../../../index.js"></script>
+</body>
+
+</html>

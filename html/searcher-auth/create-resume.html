@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Створення резюме</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/create-resume.css"/>
+    <link rel="stylesheet" href="../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"><img src="../../images/logo.svg" alt="logo" class="logo__img"></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="#" class="menu__link">Про компанію</a></li>
+                            <li class="menu__list-item"><a href="#" class="menu__link">Новини</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--            user-block auth-->
+
+                <div class="header__inner-right">
+                    <button class="header__create-btn">Створити резюме</button>
+                    <div class="header__user-block">
+                        <img src="../../images/user-photo.png" alt="header__profile-img" class="header__profile-img">
+                        <p class="header__user-name">Аліса Мурченко</p>
+                    </div>
+                </div>
+
+                <!--            user-block no auth-->
+
+                <!--                                <div class="user">-->
+                <!--                                    <div class="header__tab">-->
+                <!--                                        <a class="header__tab-btn">-->
+                <!--                                            Пошукачу-->
+                <!--                                        </a>-->
+                <!--                                        <a class="header__tab-btn user__actions-btn-active">-->
+                <!--                                            Роботодавцю-->
+                <!--                                        </a>-->
+                <!--                                    </div>-->
+                <!--                                    <a href="#" class="search__link">-->
+                <!--                                        <img src="../../images/log-in.svg" alt="search" class="search__img"><span>Увійти</span></a>-->
+                <!--                                </div>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Ссылки на вызов модальных окон-->
+<!--    <a href="#win2" class="button button-blue">Открыть окно</a>-->
+
+    <a href="#" class="overlay" id="win2"></a>
+    <div class="popup">
+        <img class="close modal-close" src="../../images/close.svg" alt="#"/>
+        <div class="modal-employer__top-wrapper">
+            <h3 class="title-article">Дані роботодавця</h3>
+            <p class="text-btn-16">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+        </div>
+        <form action="#" class="form">
+            <div class="form__input-wrapper">
+                <label for="name" class="">Ім’я</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Ім’я"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="lastname" class="">Прізвище</label>
+                <input type="text" id="lastname" name="name" class="form__input" placeholder="Прізвище"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="company" class="">Компанія</label>
+                <input type="text" id="company" name="role" class="form__input" placeholder="Компанія"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="role5" class="">Посада</label>
+                <input type="text" id="role5" name="role" class="form__input" placeholder="Посада"/>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="email" class="">Телефон або пошта</label>
+                <input type="text" id="email" name="role" class="form__input" placeholder="Телефон або пошта"/>
+            </div>
+            <div class="form__double-input-wrapper">
+                <a href="#" class="form__link-back btn-transparent">Відмінити</a>
+                <input type="submit" class="form__submit-btn btn-color" value="Додати">
+            </div>
+        </form>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+
+    <div class="bg-blur bg-blur__create-resume"></div>
+    <main>
+        <div class="container">
+            <div class="create-resume__inner">
+                <h1 class="title-xl">Створення резюме</h1>
+                <div class="create-resume__content-wrapper">
+                    <section class="create-resume__content-left">
+                        <form class="form__inner">
+                            <fieldset id="info" class="form-field section">
+                                <h3 class="title-article">Особиста інформація</h3>
+                                <div class="form__inputs-photo-block">
+                                    <img
+                                            src="../../images/resume-img.png"
+                                            alt="photo"
+                                            class="create-resume__photo"
+                                    />
+                                    <div class="form__inputs-photo-btn-wrapper">
+                                        <button class="update-photo__btn btn-transparent">
+                                            Оновити
+                                        </button>
+                                        <button class="delete-photo__btn btn-transparent__delete">
+                                            <img src="../../images/delete-red.svg" alt="delete"/>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="name-resume" class="text-medium-16"
+                                        >Ім’я та Прізвище*</label
+                                        >
+                                        <input
+                                                id="name-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Іван Кайдаш"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="city-resume" class="text-medium-16"
+                                        >Місто*</label
+                                        >
+                                        <input
+                                                id="city-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Київ"
+                                        />
+                                    </div>
+
+                                    <div class="form__select-horizontal-wrapper">
+                                        <label class="text-medium-16 form__select-label">Дата народження*</label>
+                                        <div class="create-resume__select-block">
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume1" class="label-hidden">День</label>
+                                                <input id="resume1" class="select__input" type="text" placeholder="12">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">13</li>
+                                                    <li class="select__border-item">14</li>
+                                                    <li class="select__border-item">15</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume" class="label-hidden">Місяць</label>
+                                                <input id="resume" class="select__input" type="text"
+                                                       placeholder="Грудня">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">Січень</li>
+                                                    <li class="select__border-item">Лютий</li>
+                                                    <li class="select__border-item">Березень</li>
+                                                </ul>
+                                            </div>
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="resume2" class="label-hidden">Рік</label>
+                                                <input id="resume2" class="select__input" type="text"
+                                                       placeholder="1982">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">1983</li>
+                                                    <li class="select__border-item">1984</li>
+                                                    <li class="select__border-item">1985</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="contact" class="form-field section">
+                                <h3 class="title-article">Контактна інформація</h3>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="phone-resume" class="text-medium-16"
+                                        >Телефон*</label
+                                        >
+                                        <input
+                                                id="phone-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="tel"
+                                                placeholder="(066) 000 00 00"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="email-resume" class="text-medium-16"
+                                        >Ел.Пошта</label
+                                        >
+                                        <input
+                                                id="email-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="email"
+                                                placeholder="example@gmail.com"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="social-resume" class="text-medium-16"
+                                        >Соціальні мережі</label
+                                        >
+                                        <input
+                                                id="social-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Facebook, Instagram, Linkedin"
+                                        />
+                                    </div>
+                                    <button class="input-add__wrapper">
+                                        <img
+                                                class="input-add__btn"
+                                                src="../../images/add-circle.svg"
+                                                alt="plus"
+                                        />
+                                        <span>Додати посилання</span>
+                                    </button>
+                                </div>
+                            </fieldset>
+                            <fieldset id="role" class="form-field section">
+                                <h3 class="title-article">Бажана посада</h3>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="role-resume" class="text-medium-16"
+                                        >Назва посади*</label
+                                        >
+                                        <input
+                                                id="role-resume"
+                                                class="form__input create-resume__input-size-md"
+                                                type="text"
+                                                placeholder="Наприклад, бухгалтер"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label class="text-medium-16"
+                                        >Зарплатні очікування</label
+                                        >
+                                        <div
+                                                class="input-salary-right create-resume__input-size-md"
+                                        >
+                                            <label for="from" class="label-hidden">from</label>
+                                            <input
+                                                    id="from"
+                                                    class="form__input"
+                                                    type="text"
+                                                    placeholder="від"
+                                            />
+                                            <span>-</span>
+                                            <label for="to" class="label-hidden"></label>
+                                            <input
+                                                    id="to"
+                                                    class="form__input"
+                                                    type="text"
+                                                    placeholder="до"
+                                            />
+                                            <div class="form__input-btn-wrapper">
+                                                <input type="radio" id="radio2" name="radios" checked>
+                                                <label class="salary__input-btn"  for="radio2">₴</label>
+                                                <input type="radio" id="radio3" name="radios">
+                                                <label class="salary__input-btn" for="radio3">$</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <ul class="form__input-checkbox-wrapper">
+                                            <li class="form__input-checkbox-item">
+                                                <p class="title-checkbox-item">Тип зайнятості*</p>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="full" class="create__container-label">
+                                                        <input class="personal__checkbox" id="full" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="full">Повна зайнятість</label>
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="part" class="create__container-label">
+                                                        <input class="personal__checkbox" id="part" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="part">Неповна зайнятість</label>
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="stuff" class="create__container-label">
+                                                        <input class="personal__checkbox" id="stuff" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="stuff">Позмінна робота</label>
+                                                </div>
+                                            </li>
+                                            <li class="form__input-checkbox-item">
+                                                <p class="title-checkbox-item">Характер роботи</p>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="practice" class="create__container-label">
+                                                        <input class="personal__checkbox" id="practice" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="practice"
+                                                    >Стажування/практика</label
+                                                    >
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="remote" class="create__container-label">
+                                                        <input class="personal__checkbox" id="remote" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="remote"
+                                                    >Віддалена робота</label
+                                                    >
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="office" class="create__container-label">
+                                                        <input class="personal__checkbox" id="office" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="office"
+                                                    >Робота в офісі</label
+                                                    >
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <label for="hybrid" class="create__container-label">
+                                                        <input class="personal__checkbox" id="hybrid" type="checkbox"/>
+                                                        <span class="create__checkmark"></span>
+                                                    </label>
+                                                    <label class="label-checkbox" for="hybrid"
+                                                    >Гібридна робота</label
+                                                    >
+                                                </div>
+                                            </li>
+                                            <li class="form__input-checkbox-item">
+                                                <p class="title-checkbox-item">
+                                                    Готовність до переїзду
+                                                </p>
+                                                <div class="form__checkbox-wrapper">
+                                                    <input
+                                                            id="ready"
+                                                            type="radio"
+                                                            name="work-schedule"
+                                                            class="form__radio-input"
+                                                    />
+                                                    <label class="label-checkbox" for="ready"
+                                                    >Можу виїхати за потреби</label
+                                                    >
+                                                </div>
+                                                <div class="form__checkbox-wrapper">
+                                                    <input
+                                                            id="no-ready"
+                                                            type="radio"
+                                                            name="work-schedule"
+                                                            class="form__radio-input"
+                                                    />
+                                                    <label class="label-checkbox" for="no-ready"
+                                                    >НЕ готовий до переїзду</label
+                                                    >
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="educ" class="form-field section">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Освіта</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                                Додати освіту
+                                        </button>
+                                        <input
+                                                id="file-resume-2"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form__double-block-wrapper">
+                                    <div class="form__double-block-left">
+                                        <p class="double-block-title">
+                                            Дніпровський Національний Університет (ДНУ)
+                                        </p>
+                                        <p class="double-block-description">
+                                            Бакалавр, Прикладна Математика, 2020-2024
+                                        </p>
+                                    </div>
+                                    <div class="form__double-block-right">
+                                        <button class="btn-delete form__add-btn-2">
+                                            <label for="file-resume-9" class="loading-label">
+                                                <img
+                                                        src="../../images/delete-red-no-border.svg"
+                                                        alt="add-circle"
+                                                />
+                                                Видалити
+                                            </label>
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Освіта</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                            Додати освіту
+                                        </button>
+                                        <input
+                                                id="file-resume-3"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="level-resume" class="text-medium-16"
+                                        >Рівень освіти*</label
+                                        >
+                                        <div class="create-resume__select-wrapper create-resume__select-size-lg">
+
+                                            <input id="level-resume" class="select__input" type="text"
+                                                   placeholder="Оберіть рівень освіти">
+                                            <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                 alt="chevron-down">
+                                            <ul class="select__border-list">
+                                                <li class="select__border-item">1983</li>
+                                                <li class="select__border-item">1984</li>
+                                                <li class="select__border-item">1985</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="city2-resume" class="text-medium-16"
+                                        >Місто*</label
+                                        >
+                                        <input
+                                                id="city2-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть місто"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label
+                                                for="education-name-resume"
+                                                class="text-medium-16"
+                                        >Назва закладу*</label
+                                        >
+                                        <input
+                                                id="education-name-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву навчального закладу"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16"
+                                        >Факультет, спеціальність*</label
+                                        >
+                                        <input
+                                                id="speciality-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву факультету та спеціальності"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16">
+                                            Період навчання*
+                                        </label>
+                                        <div class="form__period-block">
+                                            <div
+                                                    class="form__period-item create-resume__input-size-lg"
+                                            >
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month7-resume" class="label-hidden">Рік</label>
+                                                        <input id="month7-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year7-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year7-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form__period-item">
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month6-resume" class="label-hidden">Рік</label>
+                                                        <input id="month6-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year6-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year6-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-add__wrapper">
+                                        <label for="student" class="create__container-label">
+                                            <input class="personal__checkbox" id="student" type="checkbox"/>
+                                            <span class="create__checkmark"></span>
+                                        </label>
+                                        <label for="student">Я студент</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Освіта</h3>
+                                </div>
+                                <div class="form__double-block-wrapper">
+                                    <div class="form__double-block-left">
+                                        <p class="double-block-title">
+                                            Дніпровський Національний Університет (ДНУ)
+                                        </p>
+                                        <p class="double-block-description">
+                                            Бакалавр, Прикладна Математика, 2020-2024
+                                        </p>
+                                    </div>
+                                    <div class="form__double-block-right">
+                                        <button class="btn-delete loading-label form__add-btn-2">
+                                            <img
+                                                    src="../../images/delete-red-no-border.svg"
+                                                    alt="add-circle"
+                                            />
+                                            Видалити
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="level-resume8" class="text-medium-16"
+                                        >Рівень освіти*</label
+                                        >
+                                        <div class="create-resume__select-wrapper create-resume__select-size-lg">
+                                            <input id="level-resume8" class="select__input" type="text"
+                                                   placeholder="Оберіть рівень освіти">
+                                            <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                 alt="chevron-down">
+                                            <ul class="select__border-list">
+                                                <li class="select__border-item">1983</li>
+                                                <li class="select__border-item">1984</li>
+                                                <li class="select__border-item">1985</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="city3-resume" class="text-medium-16"
+                                        >Місто*</label
+                                        >
+                                        <input
+                                                id="city3-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть місто"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label
+                                                for="education-name-resume-2"
+                                                class="text-medium-16"
+                                        >Назва закладу*</label
+                                        >
+                                        <input
+                                                id="education-name-resume-2"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву навчального закладу"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume-2" class="text-medium-16"
+                                        >Факультет, спеціальність*</label
+                                        >
+                                        <input
+                                                id="speciality-resume-2"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву факультету та спеціальності"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16">
+                                            Період навчання*
+                                        </label>
+                                        <div class="form__period-block">
+                                            <div
+                                                    class="form__period-item create-resume__input-size-lg"
+                                            >
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month9-resume" class="label-hidden">Рік</label>
+                                                        <input id="month9-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year9-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year9-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form__period-item">
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month8-resume" class="label-hidden">Рік</label>
+                                                        <input id="month8-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year8-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year8-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-add__wrapper">
+                                        <label for="student2" class="create__container-label">
+                                            <input class="personal__checkbox" id="student2" type="checkbox"/>
+                                            <span class="create__checkmark"></span>
+                                        </label>
+                                        <label for="student">Я студент</label>
+                                    </div>
+                                    <div class="form__input-bottom-wrapper">
+                                        <div class="form__input-bottom-block">
+                                            <button
+                                                    class="form__submit-bottom-disabled"
+                                                    type="submit"
+                                            >
+                                                Зберегти Освіту
+                                            </button>
+                                            <button
+                                                    class="form__reset-bottom btn-transparent"
+                                                    type="reset"
+                                            >
+                                                Відмінити
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Освіта</h3>
+                                    <button class="btn-delete loading-label form__add-btn-2">
+                                        <img
+                                                src="../../images/delete-red-no-border.svg"
+                                                alt="add-circle"
+                                        />
+                                        Видалити
+                                    </button>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="level-resume10" class="text-medium-16"
+                                        >Рівень освіти*</label
+                                        >
+                                        <div class="create-resume__select-wrapper create-resume__select-size-lg">
+                                            <input id="level-resume10" class="select__input" type="text"
+                                                   placeholder="Оберіть рівень освіти">
+                                            <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                 alt="chevron-down">
+                                            <ul class="select__border-list">
+                                                <li class="select__border-item">1983</li>
+                                                <li class="select__border-item">1984</li>
+                                                <li class="select__border-item">1985</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="city4-resume" class="text-medium-16"
+                                        >Місто*</label
+                                        >
+                                        <input
+                                                id="city4-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть місто"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label
+                                                for="education-name-resume-3"
+                                                class="text-medium-16"
+                                        >Назва закладу*</label
+                                        >
+                                        <input
+                                                id="education-name-resume-3"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву навчального закладу"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume-3" class="text-medium-16"
+                                        >Факультет, спеціальність*</label
+                                        >
+                                        <input
+                                                id="speciality-resume-3"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву факультету та спеціальності"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16">
+                                            Період навчання*
+                                        </label>
+                                        <div class="form__period-block">
+                                            <div
+                                                    class="form__period-item create-resume__input-size-lg"
+                                            >
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month14-resume" class="label-hidden">Рік</label>
+                                                        <input id="month14-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year14-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year14-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form__period-item">
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month12-resume" class="label-hidden">Рік</label>
+                                                        <input id="month12-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year12-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year12-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-add__wrapper">
+                                        <label for="student3" class="create__container-label">
+                                            <input class="personal__checkbox" id="student3" type="checkbox"/>
+                                            <span class="create__checkmark"></span>
+                                        </label>
+                                        <label for="student">Я студент</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="exp" class="form-field section">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Досвід роботи</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                            Додати досвід роботи
+                                        </button>
+                                        <input
+                                                id="file-resume-5"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Досвід роботи</h3>
+                                    <button class="btn-delete loading-label form__add-btn-2">
+                                        <img
+                                                src="../../images/delete-red-no-border.svg"
+                                                alt="add-circle"
+                                        />
+                                        Видалити
+                                    </button>
+                                </div>
+
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="role7-resume" class="text-medium-16"
+                                        >Посада*</label
+                                        >
+                                        <input
+                                                id="role7-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Наприклад, бухгалтер"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label
+                                                for="company-name-resume-2"
+                                                class="text-medium-16"
+                                        >Назва компанії*</label
+                                        >
+                                        <input
+                                                id="company-name-resume-2"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder=""
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="scope-company-resume-2" class="text-medium-16"
+                                        >Сфера компанії*</label
+                                        >
+                                        <div class="create-resume__select-wrapper create-resume__select-size-lg">
+                                            <input id="scope-company-resume-2" class="select__input" type="text"
+                                                   placeholder="">
+                                            <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                 alt="chevron-down">
+                                            <ul class="select__border-list">
+                                                <li class="select__border-item">1983</li>
+                                                <li class="select__border-item">1984</li>
+                                                <li class="select__border-item">1985</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16">
+                                            Період роботи*
+                                        </label>
+                                        <div class="form__period-block">
+                                            <div
+                                                    class="form__period-item create-resume__input-size-lg"
+                                            >
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month11-resume" class="label-hidden">Рік</label>
+                                                        <input id="month11-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year11-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year11-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form__period-item">
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month10-resume" class="label-hidden">Рік</label>
+                                                        <input id="month10-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year10-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year10-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-add__wrapper">
+                                        <label for="work-2" class="create__container-label">
+                                            <input class="personal__checkbox" id="work-2" type="checkbox"/>
+                                            <span class="create__checkmark"></span>
+                                        </label>
+                                        <label for="work-2">Працюю тут зараз</label>
+
+                                    </div>
+
+                                    <div class="create-resume__textarea-wrapper">
+                                        <label for="desc-experience-2" class="text-medium-16"
+                                        >Опис досвіду</label
+                                        >
+                                        <textarea
+                                                id="desc-experience-2"
+                                                class="create-resume__textarea create-resume__input-size-lg"
+                                                placeholder="Розкажіть, що саме ви робили"
+                                        ></textarea>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="file-resume-4" class="text-medium-16"
+                                        >Рекомендації</label
+                                        >
+                                        <div class="loading-btn-wrapper">
+                                            <button class="add-btn-item add-btn-icon loading-btn btn-transparent">
+                                                Завантажити файл
+                                            </button>
+
+<!--                                            <button class="loading-btn btn-transparent">-->
+<!--                                                <label for="file-resume-4" class="loading-label">-->
+<!--                                                    <img-->
+<!--                                                            src="../../images/add-circle_green.svg"-->
+<!--                                                            alt="add-circle"-->
+<!--                                                    />-->
+<!--                                                    Завантажити файл-->
+<!--                                                </label>-->
+<!--                                            </button>-->
+                                            <input
+                                                    id="file-resume-4"
+                                                    type="file"
+                                                    style="display: none"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="input-add__wrapper">
+                                        <p>Немає рекомендації?</p>
+                                        <a  href="#win2" class="input-add__link search__link-btn"
+                                           data-modal="#modal_1"
+                                        >Додайте дані роботодавця
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="hab" class="form-field section">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Навички</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                            Додати навички
+                                        </button>
+                                        <input
+                                                id="file-resume-7"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Навички</h3>
+                                    <button class="btn-delete loading-label form__add-btn-2">
+                                        <img
+                                                src="../../images/delete-red-no-border.svg"
+                                                alt="add-circle"
+                                        />
+                                        Видалити
+                                    </button>
+                                </div>
+                                <div class="form__habits-wrapper">
+                                    <p class="create-resume__subtitle-description">
+                                        Оберіть навички, якими володієте та які будуть корисні
+                                        вам у новій роботі. Це допоможе роботодавцям знайти ваше
+                                        резюме і надасть вам перевагу перед іншими кандидатами.
+                                    </p>
+
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="role3-resume" class="label-hidden"
+                                        >Посада*</label
+                                        >
+                                        <input
+                                                id="role3-resume"
+                                                class="form__input"
+                                                type="text"
+                                                placeholder="Введіть назву навички"
+                                        />
+                                    </div>
+                                    <div class="knowledge-habits-block">
+                                        <p>Можливо, Вам підійде</p>
+                                        <ul class="knowledge-habits__list">
+                                            <li class="knowledge-habits__item type-blue">
+                                                Стресостійкість
+                                            </li>
+                                            <li class="knowledge-habits__item type-blue">
+                                                Стресостійкість
+                                            </li>
+                                            <li class="knowledge-habits__item type-blue">
+                                                Стресостійкість
+                                            </li>
+                                            <li class="knowledge-habits__item type-blue">
+                                                Стресостійкість
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="add" class="form-field section">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Додаткові курси</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                            Додати додаткові курси
+                                        </button>
+                                        <input
+                                                id="file-resume-8"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Додаткові курси</h3>
+                                    <button class="btn-delete loading-label form__add-btn-2">
+                                        <img
+                                                src="../../images/delete-red-no-border.svg"
+                                                alt="add-circle"
+                                        />
+                                        Видалити
+                                    </button>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="curses-resume" class="text-medium-16"
+                                        >Назва курсу*</label
+                                        >
+                                        <input
+                                                id="curses-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву курсу"
+                                        />
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="speciality-resume" class="text-medium-16">
+                                            Період навчання*
+                                        </label>
+                                        <div class="form__period-block">
+                                            <div
+                                                    class="form__period-item create-resume__input-size-lg"
+                                            >
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month3-resume" class="label-hidden">Рік</label>
+                                                        <input id="month3-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year3-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year3-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>-</div>
+                                            <div class="form__period-item">
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <div class="create-resume__select-wrapper">
+                                                        <label for="month4-resume" class="label-hidden">Рік</label>
+                                                        <input id="month4-resume" class="select__input" type="text"
+                                                               placeholder="Місяць">
+                                                        <img class="select__chevron-down"
+                                                             src="../../images/chevron-select.svg" alt="chevron-down">
+                                                        <ul class="select__border-list">
+                                                            <li class="select__border-item">Січень</li>
+                                                            <li class="select__border-item">Лютий</li>
+                                                            <li class="select__border-item">Березень</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form__input-horizontal-wrapper">
+                                                    <label
+                                                            for="year2-resume"
+                                                            class="label-hidden text-medium-16"
+                                                    >Рік</label
+                                                    >
+                                                    <input
+                                                            id="year2-resume"
+                                                            class="form__input"
+                                                            type="text"
+                                                            placeholder="Рік"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="sert-resume" class="text-medium-16"
+                                        >Сертифікат</label
+                                        >
+                                        <input
+                                                id="sert-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Посилання на сертифікат"
+                                        />
+                                    </div>
+                                    <div class="input-add__left-wrapper">
+                                        <button class="btn-no-border btn-icon form__add-btn-2">
+                                            <img
+                                                    src="../../images/add-circle_green.svg"
+                                                    alt="add-circle"
+                                            />
+                                            Додати курс або тренінг
+                                        </button>
+                                        <input
+                                                id="file-resume-9"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="leng" class="form-field section">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Знання мов</h3>
+                                    <div class="form__loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon btn-transparent">
+                                            Додати знання мов
+                                        </button>
+                                        <input
+                                                id="file-resume-11"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-field">
+                                <div class="form__top-block">
+                                    <h3 class="title-article">Знання мов</h3>
+                                    <button class="btn-delete loading-label form__add-btn-2">
+                                        <img
+                                                src="../../images/delete-red-no-border.svg"
+                                                alt="add-circle"
+                                        />
+                                        Видалити
+                                    </button>
+                                </div>
+                                <div class="form__inputs-wrapper">
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="lang2-resume" class="text-medium-16"
+                                        >Мова та рівень</label
+                                        >
+                                        <div
+                                                class="create-resume__double-select create-resume__input-size-lg"
+                                        >
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="leng2" class="label-hidden">Мова</label>
+                                                <input id="leng2" class="select__input" type="text" placeholder="Мова">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">Січень</li>
+                                                    <li class="select__border-item">Лютий</li>
+                                                    <li class="select__border-item">Березень</li>
+                                                </ul>
+                                            </div>
+                                            <div class="create-resume__select-wrapper">
+                                                <label for="leng3" class="label-hidden">Рівень володіння</label>
+                                                <input id="leng3" class="select__input" type="text"
+                                                       placeholder="Рівень володіння">
+                                                <img class="select__chevron-down" src="../../images/chevron-select.svg"
+                                                     alt="chevron-down">
+                                                <ul class="select__border-list">
+                                                    <li class="select__border-item">Січень</li>
+                                                    <li class="select__border-item">Лютий</li>
+                                                    <li class="select__border-item">Березень</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__input-horizontal-wrapper">
+                                        <label for="role-resume" class="text-medium-16"
+                                        >Сертифікат</label
+                                        >
+                                        <input
+                                                id="lang2-resume"
+                                                class="form__input create-resume__input-size-lg"
+                                                type="text"
+                                                placeholder="Введіть назву курсу"
+                                        />
+                                    </div>
+                                    <div class="input-add__left-wrapper">
+                                        <button class="btn-no-border btn-icon form__add-btn-2">
+                                            <img
+                                                    src="../../images/add-circle_green.svg"
+                                                    alt="add-circle"
+                                            />
+                                            Додати ще одну мову
+                                        </button>
+                                        <input
+                                                id="file-resume-12"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset id="upload" class="form-field section">
+                                <h3 class="title-article">Завантаження файлу резюме</h3>
+                                <p class="create-resume__subtitle-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.
+                                </p>
+                                <div class="upload__btn-wrapper">
+                                    <div class="loading-btn-wrapper">
+                                        <button class="add-btn-item add-btn-icon loading-btn btn-transparent">
+                                            Завантажити файл
+                                        </button>
+                                        <input
+                                                id="desc-resume"
+                                                type="file"
+                                                style="display: none"
+                                        />
+                                    </div>
+                                </div>
+
+                                <p class="upload__text-description">
+                                    Тільки резюме в форматі PDF і розміром до 10MB.
+                                </p>
+                            </fieldset>
+                            <div class="form__button-wrapper">
+                                <button
+                                        type="submit"
+                                        class="create-resume__create-btn btn-color"
+                                >
+                                    Розмістити резюме
+                                </button>
+                                <button
+                                        type="button"
+                                        class="create-resume__view-btn btn-transparent"
+                                >
+                                    Переглянути
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+                    <aside class="create-resume__content-right">
+                        <div class="create-resume__article-right">
+                            <div class="container-stepper">
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a class="active" href="#info">Особиста інформація</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#contact">Контактна інформація</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#role">Бажана посада </a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#educ">Освіта</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#exp">Досвід роботи</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#hab">Навички</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#add">Додаткові курси</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#leng">Знання мов</a>
+                                </div>
+                                <div class="step">
+                                    <div class="v-stepper">
+                                        <div class="circle"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <a href="#upload">Завантаження резюме-файлу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img
+                                    src="../../images/logo.svg"
+                                    alt="logo"
+                                    class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <a href="tel:0389418671761">(941) 867-1761</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../index.js"></script>
+<script src="../../select.js"></script>
+</body>
+</html>

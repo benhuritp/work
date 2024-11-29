@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/employer-no-auth/main-employer-no-auth.css">
+    <link rel="stylesheet" href="../../../css/create-vacancy.css">
+    <link rel="stylesheet" href="../../../css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner-left">
+                    <a class="header__logo" href="#"
+                    ><img src="../../../images/logo.svg" alt="logo" class="logo__img"
+                    /></a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Про компанію</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__link">Новини</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user">
+                    <div class="header__tab">
+                        <a class="header__tab-btn">
+                            Пошукачу
+                        </a>
+                        <a class="header__tab-btn user__actions-btn-active">
+                            Роботодавцю
+                        </a>
+                    </div>
+                    <a href="#" class="search__link">
+                        <img
+                                src="../../../images/log-in.svg"
+                                alt="search"
+                                class="search__img"
+                        /><span>Увійти</span></a
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           <section class="registration">
+               <div class="registration-content">
+                   <div class="stepper-wrapper">
+                       <div class="stepper-item ">
+                           <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg" alt="#"></div>
+                           <div class="step-name ">Email</div>
+                       </div>
+                       <div class="stepper-item ">
+                           <div class="step-counter done"><img class="check-mark" src="../../../images/check-mark.svg" alt="#"></div>
+                           <div class="step-name">Підтвердження</div>
+                       </div>
+                       <div class="stepper-item step-completed">
+                           <div class="step-counter ">3</div>
+                           <div class="step-name">Особисті дані</div>
+                       </div>
+                   </div>
+                   <h3 class="form__title">Реєстрація</h3>
+                   <p class="form__subtitle">Введіть свої особисті дані, щоб завершити реєстрацію</p>
+                   <form action="#" class="form">
+                       <div class="form__input-wrapper">
+                           <label for="name" class="">Ім’я та Прізвище</label>
+                           <input type="text" id="name" name="name" class="form__input" placeholder="Ім’я та Прізвище"/>
+                       </div>
+                       <div class="form__input-wrapper">
+                           <label for="city2" class="">Місто</label>
+                           <div class="create-resume__select-wrapper create-resume__select-size-lg">
+
+                               <input id="city2" class="select__input" type="text"
+                                      placeholder="Місто">
+                               <img class="select__chevron-down" src="../../../images/chevron-select.svg"
+                                    alt="chevron-down">
+                               <ul class="select__border-list">
+                                   <li class="select__border-item">Київ</li>
+                                   <li class="select__border-item">Львів</li>
+                                   <li class="select__border-item">Харків</li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="form__input-wrapper">
+                           <label for="role" class="">Посада</label>
+                           <input type="text" id="role" name="role" class="form__input" placeholder="Посада"/>
+                       </div>
+                       <div class="form__input-wrapper">
+                           <label for="password" class="">Пароль для входу</label>
+                           <input type="password" id="password" name="password" class="form__input"
+                                  placeholder="Пароль для входу"/>
+                       </div>
+                       <div class="form__input-wrapper">
+                           <label for="repeat-password" class="">Повторити пароль</label>
+                           <input type="password" id="repeat-password" name="repeat-password" class="form__input"
+                                  placeholder="Повторити пароль"/>
+                       </div>
+                       <div class="form__double-input-wrapper">
+                           <a href="#" class="form__link-back btn-transparent">Назад</a>
+                           <input type="submit" class="form__submit-btn btn-color" value="Створити акаунт">
+                       </div>
+                   </form>
+               </div>
+           </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Про компанію</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Контакти</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Допомога</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Корисні новини</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Умови користування</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Політика конфеденційності</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Фейсбук</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Вайбер</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">Інстаграм</a>
+                    </li>
+                </ul>
+                <ul class="footer__list footer__logo-block">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__link">
+                            <img src="../../../images/logo.svg" alt="logo" class="logo__img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer__list-item footer__info">
+                        <a href="#">info@gmail.com</a>
+                        <p>(941) 867-1761</p>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__btn btn-transparent"
+                        >Для роботодавця</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../../../index.js"></script>
+</body>
+</html>
