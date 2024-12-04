@@ -161,13 +161,14 @@
 
 }
 
-.modal{
-  display: block;
-}
+
 
 
 /* Планшеты в вертикальной ориентации  */
 @media (max-width: 991px) {
+  .form__double-password-wrapper{
+    gap: 15px;
+  }
   .form__submit-btn {
     width: 100%;
   }

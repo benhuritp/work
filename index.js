@@ -156,3 +156,9 @@ if (modalActions) {
     }
   };
 })();
+// Открываем модалку при загрузке страницы
+if (modal) {
+
+  modal.style.display = "flex";
+  window.document.body.classList.add("no-scroll");
+}
