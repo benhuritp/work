@@ -166,6 +166,14 @@
 
 /* Планшеты в вертикальной ориентации  */
 @media (max-width: 991px) {
+  .header__inner-left{
+    padding: 0;
+  }
+  .header__inner-right{
+    padding: 0;
+    gap: 30px;
+  }
+
   .form__double-password-wrapper{
     gap: 15px;
   }
@@ -465,7 +473,8 @@
   }
 
   .user {
-    overflow: scroll;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .search__link {
@@ -505,6 +514,7 @@
   .vacancies__card-bottom-btn{
     width: 100%;
   }
+
   .vacancies__card-hashtags{
     flex-wrap: wrap;
   }
@@ -546,15 +556,42 @@
   }
 
   .header__create-btn {
-    font-style: 12px;
-    width: 75%;
+    font-size: 12px;
+    width: 50%;
     white-space: nowrap;
   }
 
   .candidate-item__card-mini__btn {
     font-size: 13px;
   }
+  .header__profile-img{
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+  }
+  .menu__list{
+    gap: 8px;
+  }
+  .header__create-btn{
+    font-family: "Public Sans", sans-serif;
+    padding: 8px 25px ;
+  }
+  .header__user-name{
+    font-size: 14px;
+  }
+  .header__tab-btn{
+    padding: 6px 8px ;
+    font-size: 12px;
+  }
 
+  .header__tab{
+    height: 34px;
+  }
+  .search__link{
+    border: none;
+    padding: 0;
+    width: auto;
+  }
   .candidate-item__bottom-buttons {
     justify-content: space-between;
     gap: 5px;
