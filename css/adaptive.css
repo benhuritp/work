@@ -557,7 +557,7 @@
 
   .header__create-btn {
     font-size: 12px;
-    width: 50%;
+    width: 45%;
     white-space: nowrap;
   }
 
@@ -574,7 +574,7 @@
   }
   .header__create-btn{
     font-family: "Public Sans", sans-serif;
-    padding: 8px 25px ;
+    padding: 10px 25px ;
   }
   .header__user-name{
     font-size: 14px;
